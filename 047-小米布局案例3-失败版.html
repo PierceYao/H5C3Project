@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*为了约束浮动元素位置, 我们网页布局一般采取的策略是:先用标准流的父元素排列上下位置, 之后内部子元素采取浮动排列左右位置. 符合网页布局第一准侧.*/
+        * {
+            padding: 0; /* 清除内边距 */
+            margin: 0; /* 清除外边距 */
+        }
+
+        body {
+            background-color: #f5f5f5;
+        }
+
+        .main {
+            width: 1226px;
+            height: 460px;
+            margin: 100px auto;
+        }
+
+        .upBox {
+            width: 1226px;
+            height: 230px;
+        }
+
+        .downBox {
+            width: 1226px;
+            margin-top: 10px;
+            height: 230px;
+        }
+
+        .sub {
+            width: 240px;
+            height: 230px;
+            background-color: #fff;
+            text-align: center;
+            margin-right: 2px;
+            overflow: hidden;
+            display: inline-block;
+        }
+
+        .sub:hover {
+            box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, .3);
+        }
+
+        .sub a {
+            text-decoration: none;
+        }
+
+        .sub a:hover {
+            background-color: #eee;
+            color: orange;
+        }
+
+        .purePic img {
+            width: 240px;
+            height: 230px;
+        }
+
+        .underSub1 {
+            width: 240px;
+            height: 112px;
+            background-color: #333333;
+        }
+
+        .underSub2 {
+            margin-top: 4px;
+            width: 240px;
+            height: 112px;
+            background-color: #ff6700;
+        }
+
+        .pic {
+            height: 130px;
+        }
+
+        .pic img {
+            margin-top: 20px;
+            width: 130px;
+            height: 130px;
+        }
+
+        .review {
+            font: normal normal 14px/1.5 'Microsoft YaHei', serif;
+            margin: 20px 10px 2px;
+            padding: 0 28px;
+            color: #333;
+        }
+
+        .appraise {
+            font: lighter normal 12px/1.5 'Helvetica Neue', serif;
+            margin: 0 10px 10px;
+            color: #b0b0b0;
+        }
+
+        .info {
+            font: lighter normal 14px/1.5 'Microsoft YaHei', serif;
+            margin-top: 15px;
+            color: #ff6700;
+        }
+
+        .more {
+            width: 100px;
+            height: 112px;
+            display: inline-block;
+        }
+
+        .subPic {
+            width: 120px;
+            height: 112px;
+            display: inline-block;
+        }
+
+        .subPic img {
+            width: 120px;
+            height: 112px;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="upBox">
+        <div class="sub">
+            <a href="#">
+                <div class="purePic"><img src="images/upBoxPic.webp" alt="provider"></div>
+            </a>
+        </div>
+        <div class="sub">
+            <a href="#">
+                <div class="pic"><img src="images/provider.webp" alt="provider"></div>
+                <h3 class="review">Redmi G Pro 游戏本</h3>
+                <p class="appraise">狂风调校的高能电竞本</p>
+                <p class="info">8999元起</p>
+            </a>
+        </div>
+        <div class="sub">
+            <a href="#">
+                <div class="pic"><img src="images/provider.webp" alt="provider"></div>
+                <h3 class="review">Redmi G Pro 游戏本</h3>
+                <p class="appraise">狂风调校的高能电竞本</p>
+                <p class="info">8999元起</p>
+            </a>
+        </div>
+        <div class="sub">
+            <a href="#">
+                <div class="pic"><img src="images/provider.webp" alt="provider"></div>
+                <h3 class="review">Redmi G Pro 游戏本</h3>
+                <p class="appraise">狂风调校的高能电竞本</p>
+                <p class="info">8999元起</p>
+            </a>
+        </div>
+        <div class="sub">
+            <a href="#">
+                <div class="pic"><img src="images/provider.webp" alt="provider"></div>
+                <h3 class="review">Redmi G Pro 游戏本</h3>
+                <p class="appraise">狂风调校的高能电竞本</p>
+                <p class="info">8999元起</p>
+            </a>
+        </div>
+    </div>
+    <div class="downBox">
+        <div class="sub">
+            <a href="#">
+                <div class="purePic"><img src="images/downBoxPic.webp" alt="provider"></div>
+            </a>
+        </div>
+        <div class="sub">
+            <a href="#">
+                <div class="pic"><img src="images/provider.webp" alt="provider"></div>
+                <h3 class="review">Redmi G Pro 游戏本</h3>
+                <p class="appraise">狂风调校的高能电竞本</p>
+                <p class="info">8999元起</p>
+            </a>
+        </div>
+        <div class="sub">
+            <a href="#">
+                <div class="pic"><img src="images/provider.webp" alt="provider"></div>
+                <h3 class="review">Redmi G Pro 游戏本</h3>
+                <p class="appraise">狂风调校的高能电竞本</p>
+                <p class="info">8999元起</p>
+            </a>
+        </div>
+        <div class="sub">
+            <a href="#">
+                <div class="pic"><img src="images/provider.webp" alt="provider"></div>
+                <h3 class="review">Redmi G Pro 游戏本</h3>
+                <p class="appraise">狂风调校的高能电竞本</p>
+                <p class="info">8999元起</p>
+            </a>
+        </div>
+        <div class="sub">
+            <div class="underSub1">
+                <a href="#">
+                    <h3 class="subReview">Redmi G Pro 游戏本</h3>
+                    <p class="subInfo">8999元起</p>
+                    <div class="subPic"><img src="images/provider.webp" alt="provider"></div>
+                </a>
+            </div>
+            <div class="underSub2">
+                <a href="#">
+                    <div class="more">
+                        浏览更多<br><small>热门</small>
+                    </div>
+                    <div class="subPic"><img src="images/provider.webp" alt="provider"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

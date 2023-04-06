@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*
+        使用 margin 定义块元素的垂直外边距时，可能会出现外边距的合并。
+        对于两个嵌套关系（父子关系）的块元素，父元素有上外边距同时子元素也有上外边距，此时父元素会塌陷较大的外边距值。
+
+        解决方案：
+        ① 可以为父元素定义上边框。
+        ② 可以为父元素定义上内边距。
+        ③ 可以为父元素添加 overflow:hidden。
+        还有其他方法，比如浮动、固定，绝对定位的盒子不会有塌陷问题，后面咱们再总结。
+        */
+        .father {
+            width: 600px;
+            height: 400px;
+            background-color: #ff6700;
+            margin-top: 50px;
+            /*方法一*/
+            /*border-top: 1px solid #eeeeee;*/
+
+            /*方法二*/
+            /*padding-top: 1px;*/
+
+            /*方法三*/
+            overflow: hidden;
+        }
+
+        .son {
+            width: 300px;
+            height: 200px;
+            background-color: #333333;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="father">
+    <div class="son"></div>
+</div>
+</body>
+</html>

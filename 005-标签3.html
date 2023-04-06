@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--表单标签<form>用于定义表单域，以实现用户信息的收集和传递-->
+<!--<form action="url地址" method="提交方式" name="表单域名称">
+各种表单元素控件
+</form>-->
+<!--在 <input> 标签中，包含一个 type 属性（文本字段、复选框、掩码后的文本控件、单选按钮、按钮等）。-->
+<form action="demo.php" method="get" name="表单域1">
+    <!--text文本框，可以输入任何文字-->
+    <!--    用户姓名：<input type="text" name="username" placeholder="请输入用户名" maxlength="12"><br/>-->
+    <label for="text">用户姓名：</label><input type="text" name="username" value="请输入用户名"
+                                              onfocus="if (this.value==='请输入用户名'){this.value=''}" maxlength="12"
+                                              id="text"><br/>
+    <!--password密码框，用户看不见输入的密码-->
+    用户密码：<input type="password" name="pwd"><br/>
+    <!--radio单选按钮，可以实现多选-->
+    <!--checked表示默认选中-->
+    用户性别：<label for="male">男<input type="radio" name="gender" value="male" checked id="male"></label> <label
+        for="female">女<input type="radio" name="gender"
+                              value="female" id="female"></label><br/>
+    <!--checkbox复选框，可以实现多选-->
+    用户爱好：吃饭<input type="checkbox" name="hobby" value="eat" checked> 睡觉<input type="checkbox" name="hobby"
+                                                                                     value="sleep"> 打豆豆<input
+        type="checkbox" name="hobby" value="beat"><br/>
+    <!--submit提交表单，可以把form里面的表单元素的值提交给后台服务器-->
+    <input type="submit" value="免费注册">
+    <!--reset可以还原表单元素的初始状态-->
+    <input type="reset" value="重新输入"><br/>
+    <!--button按钮，后期结合JS搭配使用-->
+    <input type="button" value="按钮1"><br/>
+    <!--file文件域，上传文件时使用-->
+    上传图像：<input type="file"><br/>
+    <!--select下拉表单-->
+    籍贯：<select>
+    <option selected>请选择</option>
+    <option>华北地区 北京市、天津市、河北省、山西省、内蒙古自治区</option>
+    <option>东北地区 辽宁省、吉林省、黑龙江省</option>
+    <option>华东地区 上海市、江苏省、浙江省、安徽省、福建省、江西省、山东省、台湾省</option>
+    <option>华中地区 河南省、湖北省、湖南省</option>
+    <option>华南地区 广东省、广西壮族自治区、海南省、香港特别行政区、澳门特别行政区</option>
+</select><br/>
+    <!--textarea文本域-->
+    今日反馈：<textarea cols="30" rows="10">请输入你的留言</textarea>
+</form>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*后代选择器*/
+        ol li {
+            color: pink;
+        }
+
+        ol a {
+            color: red;
+        }
+
+        .nav a {
+            color: yellow;
+        }
+
+        /*子元素选择器*/
+        .div>a {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+<ol>
+    <li>这是ol的子标签1</li>
+    <li>这是ol的子标签2</li>
+    <li>这是ol的子标签3</li>
+    <li><a href="#">这是ol的孙标签1</a></li>
+</ol>
+
+<ul>
+    <li>这是ul的子标签1</li>
+    <li>这是ul的子标签2</li>
+    <li>这是ul的子标签3</li>
+    <li>这是ul的子标签4</li>
+</ul>
+
+<ul class="nav">
+    <li>这是ul的子标签1</li>
+    <li>这是ul的子标签2</li>
+    <li>这是ul的子标签3</li>
+    <li><a href="#">这是ul的孙标签1</a></li>
+</ul>
+
+<div class="div"><a href="#">这是儿子</a>
+    <p><a href="#">这是孙子</a></p>
+</div>
+</body>
+</html>

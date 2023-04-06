@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f3f5f7;
+}
+
+.publicWidth {
+    width: 1200px;
+    margin: auto;
+}
+
+.header {
+    height: 42px;
+    margin: 30px auto;
+}
+
+.logo {
+    float: left;
+    width: 195px;
+}
+
+.headerHref {
+    float: left;
+    width: 294px;
+    height: 42px;
+    line-height: 42px;
+    margin-left: 60px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.headerHref li {
+    float: left;
+    margin: 0 15px;
+    list-style: none;
+}
+
+.headerHref li a {
+    float: left;
+    display: block;
+    width: 36px;
+    height: 42px;
+    padding: 0 10px;
+    color: #333333;
+    font-size: 18px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.headerHref a:hover {
+    border-bottom: 2px solid #00a4ff;
+    color: #00a4ff;
+}
+
+.search input {
+    float: left;
+    width: 345px;
+    height: 40px;
+    border: 1px solid blue;
+    margin-left: 60px;
+}
+
+.search button {
+    float: left;
+    width: 50px;
+    height: 42px;
+    background: url("images/btn.png");
+    border: 0;
+}
+
+.user {
+    float: right;
+    line-height: 42px;
+    margin-right: 52px;
+    font-size: 16px;
+    color: #666;
+}
+
+
+
+/*.box {*/
+/*    width: 1200px;*/
+/*    height: 980px;*/
+/*    margin: 10px auto;*/
+/*    background-color: #225533;*/
+
+/*}*/
+
+/*li {*/
+/*    list-style: none;*/
+/*}*/
+
+/*.sub {*/
+/*    display: inline-block;*/
+/*    float: left;*/
+/*    width: 290px;*/
+/*    height: 980px;*/
+/*    margin-right: 10px;*/
+/*    background-color: pink;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.lastSub {*/
+/*    display: inline-block;*/
+/*    float: left;*/
+/*    width: 290px;*/
+/*    height: 980px;*/
+/*    background-color: pink;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.footer {*/
+/*    height: 266px;*/
+/*    background-color: #ff6700;*/
+/*}*/

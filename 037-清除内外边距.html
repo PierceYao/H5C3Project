@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*注意：行内元素为了照顾兼容性，尽量只设置左右内外边距，不要设置上下内外边距。但是转换为块级和行内块元素就可以了*/
+        * {
+            padding: 0; /* 清除内边距 */
+            margin: 0; /* 清除外边距 */
+        }
+
+        span {
+            margin: 20px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+<div>123</div>
+<ul>
+    <li>456</li>
+</ul>
+<span>行内元素为了照顾兼容性，尽量只设置左右内外边距</span>
+</body>
+</html>

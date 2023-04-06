@@ -1,0 +1,89 @@
+.banner {
+    height: 421px;
+    background-color: #1c036c;
+    background-image: url("images/banner2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.choose {
+    float: left;
+    height: 421px;
+    margin-left: 50px;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.choose li {
+    height: 45px;
+    margin: 2px 15px;
+    padding: 0 20px;
+    line-height: 45px;
+    list-style: none;
+}
+
+.choose li a {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+.choose li a:hover {
+    color: #00a4ff;
+}
+
+.choose li a span {
+    float: right;
+    margin-left: 20px;
+    position: relative;
+}
+
+.lesson {
+    float: right;
+    width: 230px;
+    height: 300px;
+    font-size: 16px;
+    margin-top: 80px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.lessonSubHeight {
+    height: 48px;
+}
+
+.lessonHead {
+    color: white;
+    background-color: #9BCEEA;
+    line-height: 48px;
+}
+
+.lessonInner {
+    border-bottom: 1px solid #a5a5a5;
+    margin: 15px 30px;
+}
+
+.lesson a {
+    color: #4e4e4e;
+    text-decoration: none;
+}
+
+.lessonInner h4,.lessonInner p {
+    height: 20px;
+    text-align: left;
+}
+
+.lessonInner h4 {
+    margin-top: 4px;
+}
+
+.lessonInner p {
+    font-size: 12px;
+    margin-bottom: 4px;
+    color: #a5a5a5;
+}
+
+.lessonEnd a {
+    border: 1px solid blue;
+    padding: 10px 50px;
+    color: #9BCEEA;
+}

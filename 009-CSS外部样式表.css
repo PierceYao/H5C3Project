@@ -1,0 +1,13 @@
+h2 {
+    text-align: center;
+    text-decoration: underline;
+    color: red;
+}
+
+div {
+    font-family: "宋体", serif;
+    font-size: 20px;
+    font-weight: bolder;
+    font-style: italic;
+    text-indent: 2em;
+}

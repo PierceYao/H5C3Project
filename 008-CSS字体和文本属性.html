@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            font-family: '宋体', serif;
+            font-size: 16px;
+            color: pink;
+            text-indent: 2em;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-style: italic;
+            color: #fff000;
+            text-align: center;
+            text-decoration: underline;/*line-through删除线 overline上划线*/
+        }
+
+        /*400-normal 700-bold*/
+        .boldFont {
+            font-weight: bolder;
+        }
+
+        /*复合属性：简写方式，节约代码*/
+        /*font: font-style font-weight font-size/line-height font-family*/
+        /*其他属性可以省略，但是font-size font-family必须存在*/
+        /*line-height设置为倍率时，行高=font-size*line-height*/
+        div {
+            font: italic bolder 18px/20px 'Microsoft YaHei', serif;
+            /*font: italic bolder 18px/1.5 'Microsoft YaHei', serif;*/
+            color: rgb(255,123,45);
+        }
+
+        a {
+            text-decoration: none;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<h2>百度百科-文字</h2>
+<p>
+    文字是人类用符号记录表达信息以传之久远的方式和工具。现代文字大多是记录语言的工具。人类往往先有口头的语言后产生书面文字，很多小语种，有语言但没有文字。
+    文字的不同体现了国家和民族的书面表达的方式和思维不同。文字使人类进入有历史记录的文明社会。<br>
+</p>
+
+<div>文字按字音和字形，可分为表形文字、表音文字和意音文字。按语音和语素，可分为音素文字、音节文字和语素文字。
+    表形文字是人类早期原生文字的象形文字，比如：古埃及的圣书字、两河流域的楔形文字、古印度文字、美洲的玛雅文和早期的汉字。<br>
+</div>
+
+<p class="boldFont">
+    意音文字是由表义的象形符号和表音的声旁组成的文字，汉字是由表形文字进化成的表意文字，汉字也是语素文字，也是一种二维文字。</p>
+
+<a href="https://www.baidu.com/" target="_blank">百度一下</a>
+</body>
+</html>

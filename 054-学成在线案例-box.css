@@ -1,0 +1,73 @@
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.box {
+    margin-top: 10px;
+}
+
+.boxHead {
+    height: 45px;
+    margin: auto;
+}
+
+.boxHead h3 {
+    float: left;
+    margin-left: 10px;
+    line-height: 45px;
+}
+
+.boxHead p {
+    float: right;
+    color: #4e4e4e;
+    font-size: 11px;
+    line-height: 45px;
+}
+
+.subBox li {
+    position: relative;
+    float: left;
+    width: 228px;
+    height: 270px;
+    background-color: #fff;
+    margin-right: 12px;
+    margin-bottom: 15px;
+    list-style: none;
+}
+
+.sub a {
+    text-decoration: none;
+}
+
+.sub a img {
+    width: 100%;
+    height: 140px;
+}
+
+.sub a h4 {
+    color: #050505;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 25px 15px;
+}
+
+.sub a p {
+    color: #999;
+    font-size: 12px;
+    text-align: center;
+}
+
+.sub a p span{
+    color: #ff6700;
+    font-size: 12px;
+    text-align: center;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+</head>
+<body>
+<h3 style="color: red; font-size: 20px;">青春不常在，抓紧谈恋爱</h3>
+<table width="500">
+    <tr>
+        <td>性别</td>
+        <td><label for="male"><input type="radio" name="gender" value="male" id="male" checked><img src="images/man.jpg"
+                                                                                                    alt="man">男</label>
+            <label for="female"><input type="radio" name="gender" value="female" id="female"><img src="images/woman.jpg"
+                                                                                                  alt="woman">女</label>
+        </td>
+    </tr>
+
+    <tr>
+        <td>生日</td>
+        <td><select>
+            <option selected>__请选择年__</option>
+            <option>1999</option>
+            <option>2000</option>
+            <option>2001</option>
+            <option>2002</option>
+            <option>2003</option>
+        </select>
+            <select>
+                <option selected>__请选择月__</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+            <select>
+                <option selected>__请选择日__</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select></td>
+    </tr>
+
+    <tr>
+        <td>所在地区</td>
+        <td><input type="text" name="area" value="北京市海淀区"
+                   onfocus="if (this.value==='北京市海淀区'){this.value=''}"
+                   maxlength="48"></label></td>
+    </tr>
+
+    <tr>
+        <td>婚姻状态</td>
+        <td><label for="unmarried"><input type="radio" name="marriage" value="unmarried" id="unmarried"
+                                          checked>未婚</label>
+            <label for="divorced"><input type="radio" name="marriage" value="divorced" id="divorced">离异</label>
+            <label for="widowed"><input type="radio" name="marriage" value="widowed" id="widowed">丧偶</label></td>
+    </tr>
+
+    <tr>
+        <td>学历</td>
+        <td><input type="text" name="education" value="幼儿园"
+                   onfocus="if (this.value==='幼儿园'){this.value=''}" maxlength="8"></td>
+    </tr>
+
+    <tr>
+        <td>喜欢的类型</td>
+        <td><label for="charming"><input type="checkbox" name="favor" value="charming" id="charming">妩媚的</label>
+            <label for="cute"><input type="checkbox" name="favor" value="cute" id="cute">可爱的</label>
+            <label for="young"><input type="checkbox" name="favor" value="young" id="young">小鲜肉</label>
+            <label for="old"><input type="checkbox" name="favor" value="old" id="old">老腊肉</label></td>
+    </tr>
+
+    <tr>
+        <td>自我介绍</td>
+        <td><textarea cols="30" rows="5">自我介绍</textarea></td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td><input type="submit" value="免费注册"><input type="reset" value="重新输入"></td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td><label for="treaty"><input type="checkbox" name="treaty" value="treaty" id="treaty">我同意注册条款和会员加入标准</label>
+        </td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td><a href="#">我是会员，立即登录</a></td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td><h2>我承诺</h2>
+            <ul>
+                <li>年满18岁、单身</li>
+                <li>抱着严肃的态度</li>
+                <li>真诚寻找另一半</li>
+            </ul>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*
+        清除浮动方法
+        1. 额外标签法也称为隔墙法，是 W3C 推荐的做法。
+
+         优点： 通俗易懂，书写方便
+         缺点： 添加许多无意义的标签，结构化较差
+         注意： 要求这个新的空标签必须是块级元素。
+        */
+        .box1 {
+            width: 400px;
+            background-color: #225533;
+            margin: 0 auto;
+        }
+
+        .sub {
+            width: 100px;
+            height: 100px;
+            background-color: #333333;
+            float: left;
+            margin: 10px 16px;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .box2 {
+            width: 400px;
+            height: 200px;
+            margin: 0 auto;
+            background-color: #fff000;
+        }
+    </style>
+</head>
+<body>
+<div class="box1">
+    <div class="sub"></div>
+    <div class="sub"></div>
+    <div class="sub"></div>
+    <div class="clear"></div>
+</div>
+<div class="box2"></div>
+</body>
+</html>

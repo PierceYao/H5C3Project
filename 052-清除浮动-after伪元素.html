@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*
+        清除浮动方法
+        3. 父级添加after伪元素
+
+         优点：没有增加标签，结构更简单
+         缺点：照顾低版本浏览器
+         代表网站： 百度、淘宝网、网易等
+        */
+        .clearfix:after {
+            content: "";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
+        .clearfix { /* IE6、7 专有 */
+            *zoom: 1;
+        }
+
+        .box1 {
+            width: 400px;
+            background-color: #225533;
+            margin: 0 auto;
+        }
+
+        .sub {
+            width: 100px;
+            height: 100px;
+            background-color: #333333;
+            float: left;
+            margin: 10px 16px;
+        }
+
+        .box2 {
+            width: 400px;
+            height: 200px;
+            margin: 0 auto;
+            background-color: #fff000;
+        }
+    </style>
+</head>
+<body>
+<div class="box1 clearfix">
+    <div class="sub"></div>
+    <div class="sub"></div>
+    <div class="sub"></div>
+</div>
+<div class="box2"></div>
+</body>
+</html>

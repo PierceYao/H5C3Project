@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*为了约束浮动元素位置, 我们网页布局一般采取的策略是:先用标准流的父元素排列上下位置, 之后内部子元素采取浮动排列左右位置. 符合网页布局第一准侧.*/
+        * {
+            padding: 0; /* 清除内边距 */
+            margin: 0; /* 清除外边距 */
+        }
+
+        .main {
+            width: 1226px;
+            height: 460px;
+            margin: 100px auto;
+        }
+
+        .selectionBox {
+            padding-left: 30px;
+            width: 196px;
+            height: 460px;
+            background-color: #535759;
+            float: left;
+        }
+
+        .selectionBox a {
+            width: 292px;
+            height: 45px;
+            background-color: #535759;
+            color: #fff;
+            line-height: 56px;
+            font-size: 14px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .selectionBox a:hover {
+            background-color: #ff6700;
+        }
+
+        .picBox {
+            width: 1000px;
+            height: 460px;
+            float: left;
+        }
+
+        .picBox img {
+            width: 1000px;
+            height: 460px;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="selectionBox">
+        <a href="#">手机</a>
+        <a href="#">电视</a>
+        <a href="#">家电</a>
+        <a href="#">笔记本 平板</a>
+        <a href="#">出行 穿戴</a>
+        <a href="#">耳机 音箱</a>
+        <a href="#">健康 儿童</a>
+        <a href="#">生活 箱包</a>
+        <a href="#">智能 路由器</a>
+        <a href="#">电源 配件</a>
+    </div>
+    <div class="picBox">
+        <a href="#"><img src="images/xiaomiSell1.jpeg" alt="Sell1"></a>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            padding: 0; /* 清除内边距 */
+            margin: 0; /* 清除外边距 */
+        }
+
+        body {
+            background-color: #f5f5f5;
+            font: 14px/1.5 Helvetica Neue, Helvetica, Arial, Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
+        }
+
+        .main {
+            width: 1226px;
+            height: 614px;
+            margin: 100px auto;
+        }
+
+        .pic, .pic img {
+            float: left;
+            width: 234px;
+            height: 614px;
+            margin-right: 10px;
+        }
+
+        .box {
+            float: left;
+            width: 982px;
+            height: 614px;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .upBox {
+            height: 302px;
+            margin-bottom: 10px;
+        }
+
+        .downBox {
+            height: 302px;
+        }
+
+        .sub {
+            display: inline-block;
+            float: left;
+            width: 238px;
+            height: 302px;
+            margin-right: 10px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .lastSub {
+            display: inline-block;
+            float: left;
+            width: 238px;
+            height: 302px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .sub img, .lastSub img {
+            width: 160px;
+            height: 160px;
+            margin-top: 20px;
+        }
+
+        .sub a, .lastSub a {
+            text-decoration: none;
+        }
+
+        .pic:hover, .sub:hover, .lastSub:hover {
+            box-shadow: 0 10px 10px -4px rgba(0, 0, 0, .3);
+        }
+
+        .title {
+            margin: 0 10px;
+            color: #333;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .info {
+            overflow:hidden;
+            height: 20px;
+            margin: 0 10px 10px;
+            color: #b0b0b0;
+            font-size: 12px;
+            white-space:nowrap;
+            text-overflow:ellipsis;
+        }
+
+        .price {
+            margin: 0 10px 10px;
+            color: #ff6700;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="pic">
+        <a href="#">
+            <img src="images/Redmi%20Note%2012%20Pro%20large.webp" alt="Redmi Note 12 Pro">
+        </a>
+    </div>
+    <div class="box">
+        <div class="upBox">
+            <ul>
+                <li class="sub">
+                    <a href="#">
+                        <img src="images/Redmi%20Note%2012%205G.webp" alt="Redmi Note 12 5G">
+                        <h3 class="title">Redmi Note 12 5G</h3>
+                        <p class="info">三星 OLED 护眼屏｜骁龙 5G 芯｜5000mAh 电量</p>
+                        <p class="price">1199元起</p>
+                    </a>
+                </li>
+                <li class="sub">
+                    <a href="#">
+                        <img src="images/Redmi%20Note%2012%20Pro.webp" alt="Redmi Note 12 Pro">
+                        <h3 class="title">Redmi Note 12 Pro</h3>
+                        <p class="info"> IMX766 防抖相机｜OLED 柔性直屏｜67W 闪充</p>
+                        <p class="price">1699元起</p>
+                    </a>
+                </li>
+                <li class="sub">
+                    <a href="#">
+                        <img src="images/Redmi%20Note%2012%20Pro+.webp" alt="Redmi Note 12 Pro+">
+                        <h3 class="title">Redmi Note 12 Pro+</h3>
+                        <p class="info">2亿超清防抖相机｜OLED 柔性直屏</p>
+                        <p class="price">
+                            <span>2099元起</span>
+                            <del>
+                                <span>2199元起</span>
+                            </del>
+                        </p>
+                    </a>
+                </li>
+                <li class="lastSub">
+                    <a href="#">
+                        <img src="images/Redmi%20Note%2011%205G.webp" alt="Redmi Note 11 5G">
+                        <h3 class="title">Redmi Note 11 5G</h3>
+                        <p class="info">5000mAh大电量</p>
+                        <p class="price">
+                            <span>1099元起</span>
+                            <del>
+                                <span>1199元起</span>
+                            </del>
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="downBox">
+            <ul>
+                <li class="sub">
+                    <a href="#">
+                        <img src="images/Redmi%20K50.webp" alt="Redmi K50">
+                        <h3 class="title">Redmi K50</h3>
+                        <p class="info">2K直屏的狠旗舰</p>
+                        <p class="price">
+                            <span>2099元起</span>
+                            <del>
+                                <span>2399元起</span>
+                            </del>
+                        </p>
+                    </a>
+                </li>
+                <li class="sub">
+                    <a href="#">
+                        <img src="images/Redmi%20Note%2011T%20Pro.webp" alt="Redmi Note 11T Pro">
+                        <h3 class="title">Redmi Note 11T Pro</h3>
+                        <p class="info">天玑8100｜真旗舰芯</p>
+                        <p class="price">
+                            <span>1569元起</span>
+                            <del>
+                                <span>1799元起</span>
+                            </del>
+                        </p>
+                    </a>
+                </li>
+                <li class="sub">
+                    <a href="#">
+                        <img src="images/Xiaomi%2012S%20Pro.webp" alt="Xiaomi 12S Pro">
+                        <h3 class="title">Xiaomi 12S Pro</h3>
+                        <p class="info">骁龙8+ 旗舰处理器 | 徕卡影像</p>
+                        <p class="price">
+                            <span>4399元起</span>
+                            <del>
+                                <span>4699元起</span>
+                            </del>
+                        </p>
+                    </a>
+                </li>
+                <li class="lastSub">
+                    <a href="#">
+                        <img src="images/Redmi%20K50%20至尊版.webp" alt="Redmi K50 至尊版">
+                        <h3 class="title">Redmi K50 至尊版</h3>
+                        <p class="info">骁龙8+ ｜1.5K 高清直屏</p>
+                        <p class="price">
+                            <span>2799元起</span>
+                            <del>
+                                <span>2999元起</span>
+                            </del>
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

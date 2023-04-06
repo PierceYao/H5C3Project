@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*
+        清除浮动方法
+        2. 父级添加 overflow 属性
+
+         优点：代码简洁
+         缺点：无法显示溢出的部分
+        */
+        .box1 {
+            width: 400px;
+            background-color: #225533;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .sub {
+            width: 100px;
+            height: 100px;
+            background-color: #333333;
+            float: left;
+            margin: 10px 16px;
+        }
+
+        .box2 {
+            width: 400px;
+            height: 200px;
+            margin: 0 auto;
+            background-color: #fff000;
+        }
+    </style>
+</head>
+<body>
+<div class="box1">
+    <div class="sub"></div>
+    <div class="sub"></div>
+    <div class="sub"></div>
+</div>
+<div class="box2"></div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+h1 {
+    text-align: center;
+    font-weight: normal;
+}
+
+div {
+    text-align: center;
+    color: #888888;
+    font-size: 12px;
+}
+
+body {
+    text-indent: 2em;
+    font-size: 16px;
+    font-family: 'Microsoft YaHei',serif
+}
+
+h4 {
+    text-indent: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text {
+    color: #888888;
+    width: 170px;
+}
+
+.btn {
+    font-size: 11px;
+    font-weight: bold;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .method {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 100px auto;
+            border-radius: 10px;
+        }
+
+        /*CSS3 中新增了盒子阴影，我们可以使用 box-shadow 属性为盒子添加阴影。
+        box-shadow: h-shadow v-shadow blur spread color inset;*/
+        .method:hover {
+            box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, .3);
+        }
+    </style>
+</head>
+<body>
+<div class="method"></div>
+</body>
+</html>
